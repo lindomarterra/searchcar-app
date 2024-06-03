@@ -2,3 +2,28 @@
     background-color: #222222d7;
     box-shadow: 2px 2px 2px #222222b7;
 }
+
+.nvb-logo{
+    cursor: pointer;
+}
+
+.nvb-links ul li{
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #fff;        
+}
+
+.nvb-links ul li:hover{
+    color: #222222b7;
+    background-color: #fff;
+}
+
+.nvb-contato span{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.nvb-socialMidia{
+    cursor: pointer;
+}

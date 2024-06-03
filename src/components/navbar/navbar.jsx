@@ -11,28 +11,29 @@ const Navbar =  () =>{
     return(
 
       <header>
-        
-        <nav className='navbar navbar-expand-lg d-none d-lg-block ' >
+
+            {/* NAVBAR DESKTOP */}
+        <nav className='navbar navbar-expand-lg d-none d-lg-block py-0' >
           <div className='container'>
-            <h1 className='navbar-brand text-white fw-bolder fs-4'> SearchCar </h1>
+            <h1 className='nvb-logo navbar-brand text-white fw-bolder pt-2 fs-6'> SearchCar </h1>
         
-            <div className='nvb-links text-white fw-bold  ' >
-              <ul className='navbar-nav '  >
-                <li className='nav-item m-1'>Home</li>
-                <li className='nav-item m-1'>Estoque</li>
-                <li className='nav-item m-1'>Venda</li>
-                <li className='nav-item m-1'>Compra</li>
-                <li className='nav-item m-1'>Contato</li>
+            <div className='nvb-links m-0 p-0' >
+              <ul className='navbar-nav m-0 p-0'  >
+                <li className='nav-item my-0 mx-1 p-2'>Home</li>
+                <li className='nav-item my-0 mx-1 p-2'>Estoque</li>
+                <li className='nav-item my-0 mx-1 p-2'>Venda</li>
+                <li className='nav-item my-0 mx-1 p-2'>Compra</li>
+                <li className='nav-item my-0 mx-1 p-2'>Contato</li>
               </ul>
             </div>
             <div className='nvb-contato'>
-              <FaWhatsapp className='text-white fs-4 me-1' />
-              <span className='text-white fw-bold fs-6'>(51) 9 9806 8587</span>
+              <FaWhatsapp className='text-white fs-5 me-1' />
+              <span className='text-white fw-bold'>(51)99806 8587</span>
             </div>
             <div className='nvb-socialMidia'>
-                <FaInstagram className='text-white fs-4 me-2' />
-                <IoLogoYoutube className='text-white fs-4 me-2' />
-                <FaFacebook className='text-white fs-4 me-2' />
+                <FaInstagram className='text-white fs-6 me-2' />
+                <IoLogoYoutube className='text-white fs-6 me-2' />
+                <FaFacebook className='text-white fs-6 me-2' />
             </div>
         
         
@@ -40,7 +41,7 @@ const Navbar =  () =>{
         </nav>
         
 
-
+          {/* NAVBAR MOBILE */}
         <nav className='navbar d-lg-none '>
           <div className='container'>
 
