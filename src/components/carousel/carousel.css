@@ -1,0 +1,54 @@
+
+.src-container{
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.src-arrows{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+}
+
+.src-arrows svg{
+    width: 38px;
+    height: 38px;
+    margin: 25px 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.src-items{
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.src-dots{
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 25px;
+}
+
+.src-dots svg{
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    color: #fff;
+    cursor: pointer;
+}
