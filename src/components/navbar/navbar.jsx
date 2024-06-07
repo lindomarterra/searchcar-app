@@ -13,17 +13,17 @@ const Navbar =  () =>{
       <header>
 
             {/* NAVBAR DESKTOP */}
-        <nav className='navbar navbar-expand-lg d-none d-lg-block py-0' >
+        <nav className='navbar navbar-expand-lg py-0 position-static w-100  ' >
           <div className='container'>
             <h1 className='nvb-logo navbar-brand text-white fw-bolder pt-2 fs-6'> SearchCar </h1>
         
             <div className='nvb-links m-0 p-0' >
               <ul className='navbar-nav m-0 p-0'  >
-                <li className='nav-item my-0 mx-1 p-2'>Home</li>
-                <li className='nav-item my-0 mx-1 p-2'>Estoque</li>
-                <li className='nav-item my-0 mx-1 p-2'>Venda</li>
-                <li className='nav-item my-0 mx-1 p-2'>Compra</li>
-                <li className='nav-item my-0 mx-1 p-2'>Contato</li>
+                <li className='nav-item text-center my-0 mx-1 p-2'>Home</li>
+                <li className='nav-item text-center my-0 mx-1 p-2'>Estoque</li>
+                <li className='nav-item text-center my-0 mx-1 p-2'>Venda</li>
+                <li className='nav-item text-center my-0 mx-1 p-2'>Compra</li>
+                <li className='nav-item text-center my-0 mx-1 p-2'>Contato</li>
               </ul>
             </div>
             <div className='nvb-contato'>
@@ -39,30 +39,7 @@ const Navbar =  () =>{
         
           </div>
         </nav>
-        
-
-          {/* NAVBAR MOBILE */}
-        <nav className='navbar d-lg-none '>
-          <div className='container'>
-
-            <h1 className='navbar-brand text-white fw-bolder fs-4'> SearchCar </h1>
-
-            <button className="navbar-toggler bg-white p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            
-            <div className="collapse navbar-collapse" id="navbarMobile">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item text-white fw-bold my-1 ">  Home   </li>
-                <li className="nav-item text-white fw-bold my-1 ">  Estoque </li>
-                <li className="nav-item text-white fw-bold my-1 ">  Venda   </li>
-                <li className="nav-item text-white fw-bold my-1 ">  Compra   </li>
-                <li className="nav-item text-white fw-bold my-1 ">  Contato   </li>
-              </ul>
-            </div>
-
-          </div>
-        </nav>
+              
 
       </header>
 

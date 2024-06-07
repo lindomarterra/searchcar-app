@@ -1,6 +1,6 @@
 .navbar{
     background-color: #222222d7;
-    box-shadow: 2px 2px 2px #222222b7;
+    box-shadow: 2px 2px 2px #222222b7;    
 }
 
 .nvb-logo{
@@ -9,6 +9,7 @@
 
 .nvb-links ul li{
     font-size: 13px;
+    width: 75px;
     cursor: pointer;
     font-weight: bolder;
     color: #fff;        

@@ -7,9 +7,9 @@ import { FaArrowCircleRight } from "react-icons/fa"
 const Carousel = () =>{
 
     const data = [
-        { id: 1, url: 'http://localhost:3000/assets/images/carro01.jpg'},
-        { id: 1, url: 'http://localhost:3000/assets/images/carro02.jpg'},
-        { id: 1, url: 'http://localhost:3000/assets/images/carro03.jpg'},
+        { id: 1, url: 'http://localhost:3000/assets/images/desktopCar01.jpg'},
+        { id: 2, url: 'http://localhost:3000/assets/images/desktopCar02.jpg'},
+        { id: 3, url: 'http://localhost:3000/assets/images/desktopCar03.jpg'},
     ]
 
     const [slide, setSlide]= useState(0)
@@ -30,8 +30,9 @@ const Carousel = () =>{
         setSlide(index)
     }
 
-    return(
+      return(
         <body>        
+
             {/* DESKTOP */}
             <div className="src-container">
                 <div className="src-arrows">
@@ -39,7 +40,7 @@ const Carousel = () =>{
                     <FaArrowCircleRight onClick={()=> navNext() } />
                 </div>
 
-                <div className="src-items" style={{ background:`url(${data[slide].url})`}}></div>
+                <div className="src-items" style={{ background:`url(${data[slide].url})`}} > </div>
 
                 <div className="src-dots">
                     <BsCircleFill onClick={()=> navDots(0)} />
@@ -47,8 +48,8 @@ const Carousel = () =>{
                     <BsCircleFill onClick={()=> navDots(2)} />                                        
                 </div>
             </div>
-         
-        
+                           
+                                                  
         </body>      
     )    
 }
