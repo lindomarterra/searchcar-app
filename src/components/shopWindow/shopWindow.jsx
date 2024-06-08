@@ -1,15 +1,26 @@
 import React from 'react'
-import CarouselSmall from '../carousel/carouselSmall'
+import Card from '../card/card'
+import './shopWindow.css'
 
 const ShopWindow = () => {
   return (
     <body>
-      <CarouselSmall />
-      <h5>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laboriosam
-        voluptates adipisci deleniti! Totam ipsa at ea, quod dicta officiis modi
-        odit, atque magnam amet et animi perspiciatis possimus ut?
-      </h5>
+      <div className="spw-container">
+        <div className="spw-content">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
     </body>
   )
 }
