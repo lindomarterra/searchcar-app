@@ -30,28 +30,30 @@ const Carousel = () =>{
         setSlide(index)
     }
 
-      return(
-        <body>        
-
-            {/* DESKTOP */}
-            <div className="src-container">
-                <div className="src-arrows">
-                    <FaArrowCircleLeft onClick={()=> navPrev() } />
-                    <FaArrowCircleRight onClick={()=> navNext() } />
-                </div>
-
-                <div className="src-items" style={{ background:`url(${data[slide].url})`}} > </div>
-
-                <div className="src-dots">
-                    <BsCircleFill onClick={()=> navDots(0)} />
-                    <BsCircleFill onClick={()=> navDots(1)} />
-                    <BsCircleFill onClick={()=> navDots(2)} />                                        
-                </div>
+      return (
+        <body>
+          {/* DESKTOP */}
+          <div className="src-container">
+            <div className="src-arrows">
+              <FaArrowCircleLeft onClick={() => navPrev()} />
+              <FaArrowCircleRight onClick={() => navNext()} />
             </div>
-                           
-                                                  
-        </body>      
-    )    
+
+            <div
+              className="src-items"
+              style={{ background: `url(${data[slide].url})` }}
+            >
+              {' '}
+            </div>
+
+            <div className="src-dots">
+              <BsCircleFill onClick={() => navDots(0)} />
+              <BsCircleFill onClick={() => navDots(1)} />
+              <BsCircleFill onClick={() => navDots(2)} />
+            </div>
+          </div>
+        </body>
+      )    
 }
 
 export default Carousel
