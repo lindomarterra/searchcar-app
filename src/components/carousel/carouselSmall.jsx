@@ -9,14 +9,15 @@ const CarouselSmall = () => {
     const [slide, setSlide]= useState(0)
 
     const vitrine = [
-        { id: 1, url: 'http://localhost:3000/assets/images/vitrine/car01Photo01.jpg'},
-        { id: 2, url: 'http://localhost:3000/assets/images/vitrine/car01Photo02.jpg'},
-        { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01Photo03.jpg'},
-        { id: 4, url: 'http://localhost:3000/assets/images/vitrine/car01Photo04.jpg'},
-        { id: 5, url: 'http://localhost:3000/assets/images/vitrine/car01Photo05.jpg'},
-        { id: 6, url: 'http://localhost:3000/assets/images/vitrine/car01Photo06.jpg'},
-        { id: 7, url: 'http://localhost:3000/assets/images/vitrine/car01Photo07.jpg'},
-        { id: 8, url: 'http://localhost:3000/assets/images/vitrine/car01Photo08.jpg'},        
+        { id: 1, url: 'http://localhost:3000/assets/images/vitrine/car01/foto1.jpg'},
+        { id: 2, url: 'http://localhost:3000/assets/images/vitrine/car01/foto2.jpg'},
+        { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto3.jpg'},
+        { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto4.jpg'},
+        { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto5.jpg'},
+        { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto6.jpg'},
+        { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto7.jpg'},
+        { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto8.jpg'}
+              
     ]
 
     const navPrev = () => {
@@ -49,7 +50,7 @@ const CarouselSmall = () => {
                 <div className="crsm-dots">
                     {
                         vitrine.map((item, index)=> (
-                            <BsCircleFill onClick={(ite,)=> navDot(index)} />
+                            <BsCircleFill onClick={(item)=> navDot(index)} />
                         ))
                     }                    
                 </div>
