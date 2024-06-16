@@ -16,8 +16,7 @@ const CarouselSmall = () => {
         { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto5.jpg'},
         { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto6.jpg'},
         { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto7.jpg'},
-        { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto8.jpg'}
-              
+        { id: 3, url: 'http://localhost:3000/assets/images/vitrine/car01/foto8.jpg'}              
     ]
 
     const navPrev = () => {

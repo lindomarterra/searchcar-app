@@ -3,6 +3,8 @@ import './card.css'
 import CarouselSmall from '../../components/carousel/carouselSmall'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 const Card = () => {
+  
+ 
   return (
     <div className="crd-container">
       <div className="crd-top">
@@ -15,7 +17,7 @@ const Card = () => {
           <span>2020</span>
         </div>
         <div className="crd-price">
-          <h1>R$ 149.800,50</h1>
+          <h1>R$ 149.800,50 </h1>
         </div>
         <div className="crd-location">
           <FaMapMarkerAlt />
