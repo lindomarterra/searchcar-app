@@ -5,6 +5,7 @@ import './estoque.css'
 import { BiSearch } from 'react-icons/bi'
 import { carInfo } from '../../data/car'
 import Card from '../../components/card/card'
+import Pagination from '../../components/pagination/pagination'
 
 const Estoque = () => {
   /* creating pagination  */
@@ -60,17 +61,21 @@ const Estoque = () => {
                 return <Card key={index} item={car} />
               })}
           </div>
+
+          <div className="est-vitrine-pagination">
+            <Pagination
+              limit={limit} /* PROPS */
+              total={carInfo.length}
+              skip={skip}
+              setSkip={setSkip}
+            />
+          </div>
+
         </div>
-
-        <div className="est-vitrine-pagination">
-
-        </div>
-
       </div>
 
       <Footer />
     </>
   )
-  
 }
 export default Estoque
